@@ -1,10 +1,10 @@
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 
 #Members API Route
 
-@app.route(/"members")
+@app.route("/members")
 def members():
     return{"members":["Member1","Member2","Member3"]}
 
